@@ -1,0 +1,28 @@
+{
+  "name": "vanilla-typescript",
+  "version": "1.0.0",
+  "description": "JavaScript and TypeScript example starter project",
+  "main": "index.html",
+  "scripts": {
+    "start": "node src/prebuild.js dev && parcel index.html --open",
+    "start:qa": "node src/prebuild.js qa && parcel index.html --open",
+    "start:prod": "node src/prebuild.js prod && parcel index.html --open",
+    "build": "node src/prebuild.js dev &&  parcel build index.html",
+    "build:qa": "node src/prebuild.js qa &&  parcel build index.html",
+    "build:prod": "node src/prebuild.js prod &&  parcel build index.html"
+
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
+  "devDependencies": {
+    "typescript": "4.2.3"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": [
+    "typescript",
+    "javascript"
+  ]
+}
